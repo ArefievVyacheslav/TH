@@ -1,0 +1,103 @@
+.pos-rel {
+  position: relative;
+}
+.pos-fixed {
+  position: fixed !important;
+}
+.pos-abs {
+  position: absolute;
+}
+.pos-sticky {
+  position: sticky !important;
+}
+.db {
+  display: block;
+}
+.dn {
+  display: none;
+}
+.df {
+  display: flex;
+}
+.acc {
+  align-content: center;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.fdc {
+  flex-direction: column;
+}
+.fdr {
+  flex-direction: row;
+}
+.jcsa {
+  justify-content: space-around;
+}
+.jcc {
+  justify-content: center;
+}
+.acsb {
+  align-content: space-between;
+}
+.aic {
+  align-items: center;
+}
+.oh {
+  overflow: hidden;
+}
+.ohx {
+  overflow-x: hidden;
+}
+.t0 {
+  top: 0;
+}
+.t27px {
+  top: 27px;
+}
+.t25px {
+  top: 25px;
+}
+.r237px {
+  right: 237px;
+}
+.r8px {
+  right: 8px;
+}
+.t38px {
+  top: 38px;
+}
+.t6px {
+  top: 6px;
+}
+.t7px {
+  top: 7px;
+}
+.t8px {
+  top: 8px;
+}
+.l9px {
+  left: 9px;
+}
+.l8px {
+  left: 8px;
+}
+.l0px {
+  left: 0;
+}
+.b0 {
+  bottom: 0;
+}
+.o0 {
+  opacity: 0;
+}
+.o1t {
+  opacity: 1;
+  transition: .1s;
+}
+.zi1 {
+  z-index: 1;
+}
+.rotate180deg {
+  transform: rotateX(180deg);
+}
