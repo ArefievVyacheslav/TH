@@ -1,34 +1,4 @@
 User-agent: *
-Disallow: */sort-*
-Disallow: */show-*/*
-Disallow: */dreambox
-Disallow: /product$
-Disallow: */page*
-Disallow: /*from-
-Disallow: */?etext*
-Disallow: */*%20*
-Disallow: */installment/*
-Disallow: */search*
-Disallow: */*%C2%A0*
 
-Disallow: */tufli--/*
-Disallow: */--odezhda--/*
-Disallow: */topy*
-Disallow: */polo--/*
-Disallow: */bluzy--/*
-Disallow: */kedy--krossovki*
-Disallow: */majki*
-Disallow: */sportivnaja%20odezhda--/*
-Disallow: */-5--6-*
-Disallow: */--dr.-martens--*
-Disallow: */paul-and-shark*
-Disallow: */polo--*
-Disallow: */pulovery*
-Disallow: */platja-i-sarafany--*
-Disallow: *--41/.5--*
-Disallow: */vodolazki--*
-
-Disallow: */category/*
-
-Host: https://sales-search.ru/
-Sitemap: https://sales-search.ru/sitemap-index.xml
+Host: https://text-helper.ru/
+Sitemap: https://text-helper/sitemap-index.xml

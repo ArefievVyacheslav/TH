@@ -39,6 +39,7 @@ export default {
   modules: [
     'cookie-universal-nuxt',
     'nuxt-delay-hydration',
+    '@nuxt/image',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // 'nuxt-trailingslash-module',
@@ -48,8 +49,8 @@ export default {
       {
         defaultBreakpoint: 'default',
         breakpoints: {
-          sm: 767,
-          md: 1150,
+          sm: 700,
+          md: 1300,
           lg: Infinity
         }
       }
@@ -61,15 +62,8 @@ export default {
     mode: 'init',
     debug: process.env.NODE_ENV === 'development'
   },
-  bootstrapVue: {
-    icons: false,
-    bootstrapCSS: false,
-    bootstrapVueCSS: false,
-    componentPlugins: [ 'Modal', 'Sidebar', 'ImagePlugin' ],
-    directivePlugins: []
-  },
   axios: {
-    baseURL: 'http://localhost:3004/'
+    baseURL: 'http://localhost:3002/'
   },
   sitemap: {
     hostname: 'https://text-helper.ru',

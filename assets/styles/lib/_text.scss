@@ -6,10 +6,13 @@
   color: #B3B3B3 !important;
 }
 .text-dark {
-  color: #303030 !important;
+  color: $black-bgc !important;
 }
 .text-white {
   color: #fff !important;
+}
+.text-active {
+  color: $green-active !important;
 }
 .hover-text-dark:hover {
   color: #303030 !important;
@@ -34,6 +37,9 @@
 }
 .tar {
   text-align: right;
+}
+.tal {
+  text-align: left;
 }
 .fs20px {
   font-size: 20px !important;
