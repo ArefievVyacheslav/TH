@@ -19,7 +19,7 @@ export default {
   },
   rootDir: __dirname,
   router: { prefetchLinks: false },
-  loading: { height: '3px', color: '#05c5ff' },
+  loading: { height: '3px', color: '#66D58B' },
   css: [
     'normalize.css'
   ],
