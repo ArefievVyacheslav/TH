@@ -6,7 +6,7 @@
     )
     Menu(view="vertical").ml-auto
     Balance.mt40px.mb32px.ml-auto(:class="{ 'mt65px mb40px': $mq === 'md' }")
-    Authorize.ml-auto
+    Authorize.ml-auto(:styles="{ right: '-128px', top: '-187px' }")
 
 </template>
 
@@ -49,6 +49,7 @@ export default {
   border-left: 2px solid $green-active;
   transition: 0.4s;
   overflow-y: auto;
+  z-index: 1;
 }
 
 .sidebar_active {

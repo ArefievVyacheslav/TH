@@ -3,10 +3,11 @@
     .container.df.jcsb.g42(:class="{ 'jcfe': view === 'vertical' }")
       .menu__link-wrapper.pos-rel(:class="{ 'df aic ml-auto': view !== 'vertical' }")
 
-        template(v-for="link,idx in links")
+        template(v-if="!seoUserAgentDesktop")
           nuxt-link.menu__link.font-tektur(
-            :to="link.href" :class="{ 'mr40px': idx !== links.length - 1, menu__link_active: $route.path === link.href }"
-            )
+            v-for="link,idx in links" :to="link.href"
+            :class="{ 'mr40px': idx !== links.length - 1, menu__link_active: $route.path === link.href }"
+          )
             template(v-if="!link.links")
               span.db {{ link.anchor }}
 
@@ -40,6 +41,13 @@
                             :class="{ menu__link_active: $route.path === link2.href }"
                           )
                             | {{ link2.anchor }}
+
+        template(v-else)
+          nuxt-link.menu__link.font-tektur(
+            v-for="link,idx in links" :to="link.href"
+            :class="{ 'mr40px': idx !== links.length - 1, menu__link_active: $route.path === link.href }"
+          )
+            span.db {{ link.anchor }}
 
 </template>
 
@@ -79,6 +87,11 @@ export default {
       'SEO инструменты': false
     }
   }),
+  computed: {
+    seoUserAgentDesktop () {
+      return this.$store.getters['seo/GET_USER_AGENT'] === 'YD' || this.$store.getters['seo/GET_USER_AGENT'] === 'GD'
+    }
+  },
   watch: {
     '$route.path': {
       handler (nV) {

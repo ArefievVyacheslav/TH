@@ -1,5 +1,5 @@
 <template lang="pug">
-  header.black-bgc.pt40px
+  header.pt40px
     .container.df.aic(:class="{ jcsb: $mq === 'lg' || seoUserAgentDesktop }")
       Logo
       Menu(v-if="$mq === 'lg' || seoUserAgentDesktop" )
@@ -46,7 +46,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-
-</style>
